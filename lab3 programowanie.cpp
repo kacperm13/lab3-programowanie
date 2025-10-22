@@ -96,6 +96,7 @@ int main()
         cout << "prawda" << endl;
     }
     */
+    /*
     float a;                    //zad 6
     float b;
     int c = 1;
@@ -106,8 +107,7 @@ int main()
         cin >> b;
         cout << "Podaj symbol dzialania, ktore bedzie wykonywane:\n+ - DODAWANIE\n- - ODEJMOWANIE\n* - MNOZENIE\n/ - DZIELENIE\n";
         cin >> opcja;
-        cout << "Czy zakonczyc dzialanie kalkulatora?\n0 - TAK\n1 - NIE\n";
-        cin >> c;
+        
         if (c == 0) {
             return 0;
         }
@@ -115,12 +115,18 @@ int main()
             switch (opcja) {
             case '+':
                 cout << a + b << "\n";
+                cout << "Czy zakonczyc dzialanie kalkulatora?\n0 - TAK\n1 - NIE\n";
+                cin >> c;
                 break;
             case '-':
                 cout << a - b << "\n";
+                cout << "Czy zakonczyc dzialanie kalkulatora?\n0 - TAK\n1 - NIE\n";
+                cin >> c;
                 break;
             case '*':
                 cout << a * b << "\n";
+                cout << "Czy zakonczyc dzialanie kalkulatora?\n0 - TAK\n1 - NIE\n";
+                cin >> c;
                 break;
             case '/':
                 if (b == 0) {
@@ -129,13 +135,36 @@ int main()
                 else {
                     cout << a / b << "\n";
                 }
+                cout << "Czy zakonczyc dzialanie kalkulatora?\n0 - TAK\n1 - NIE\n";
+                cin >> c;
                 break;
             default:
                 cout << "Niepoprawny znak.\n";
+                cout << "Czy zakonczyc dzialanie kalkulatora?\n0 - TAK\n1 - NIE\n";
+                cin >> c;
             }
         }
 
     }
+
+    */
+
+int a=0;
+bool i = true;
+while (i = true) {
+    a++;
+    if (a % 2 != 0) {
+        cout << a << "\n";
+        if (a == 200) {
+            return 0;
+        }
+    }
+
+  
 }
+
+
+}
+
 
 
