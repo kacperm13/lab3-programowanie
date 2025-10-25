@@ -149,20 +149,17 @@ int main()
 
     */
 
-int a=0;
+int a=0;        //7
 bool i = true;
-while (i = true) {
+while (i == true) {
     a++;
-    if (a % 2 != 0) {
-        cout << a << "\n";
-        if (a == 200) {
-            return 0;
-        }
+    if (a == 200) {
+        return 0;
     }
-
-  
+    if (a % 2 == 0) {
+        continue;
+    }
 }
-
 
 }
 
